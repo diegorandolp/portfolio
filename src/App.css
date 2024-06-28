@@ -1,0 +1,58 @@
+* {
+    color: white;
+}
+html {
+    background-color: black;
+}
+.box{
+    background-color: #262626;
+    border: 1px solid #5c5c5c;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 70%;
+    margin: 25px auto 10px auto;
+}
+header{
+    text-align: center;
+}
+header button{
+    background-color: #262626;
+    border-style: none;
+    min-width: 30%;
+}
+button:hover{
+    color: orangered;
+}
+
+#myphoto img{
+    border: 3px solid #5c5c5c;
+    border-radius: 50%;
+    width: 100%;
+}
+#about button{
+    background-color: #262626;
+    border-style: none;
+}
+#availability{
+    height: 10px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 20%;
+
+}
+#availability p{
+    font-size: small;
+}
+#availability img{
+    width: 10%;
+
+}
+#rightSide{
+    display: grid;
+    grid-template-rows: 70% 20%;
+}
+
+#about{
+        display: grid;
+        grid-template-columns: 70% 20%;
+}

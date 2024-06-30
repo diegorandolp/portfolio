@@ -3,12 +3,10 @@ export default function Header() {
 
   return(
     <div>
-      <header>
-        <section className="box">
-          <button>ABOUT</button>
-          <button>PROJECTS</button>
-          <button>CONTACT</button>
-        </section>
+      <header className="box">
+        <button>ABOUT</button>
+        <button>PROJECTS</button>
+        <button>CONTACT</button>
       </header>
     </div>
   );

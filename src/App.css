@@ -1,58 +1,176 @@
 * {
-    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
 }
 html {
-    background-color: black;
+    background: #161616;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
 }
-.box{
-    background-color: #262626;
-    border: 1px solid #5c5c5c;
-    border-radius: 20px;
-    padding: 10px;
-    max-width: 70%;
-    margin: 25px auto 10px auto;
+p{
+    color: #C0C0C0;
 }
+
+/*All */
+#all{
+    display: grid;
+    grid-template-rows: 1fr 5fr 13fr 1fr;
+    margin: 0 auto;
+    max-width: 1000px;
+    gap: 10px;
+}
+
+/*Header */
 header{
     text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
+
 header button{
-    background-color: #262626;
+    background-color: #1B1B1B;
     border-style: none;
-    min-width: 30%;
+    min-height: 30px;
+    font-weight: bolder;
 }
-button:hover{
+header button:hover{
     color: orangered;
 }
 
-#myphoto img{
-    border: 3px solid #5c5c5c;
-    border-radius: 50%;
-    width: 100%;
-}
-#about button{
-    background-color: #262626;
-    border-style: none;
-}
-#availability{
-    height: 10px;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 20% 20%;
+/*Generic box*/
 
+.box{
+    background-color: #1B1B1B;
+    border: 1px solid #262626;
+    border-radius: 20px;
+    padding: 10px;
 }
-#availability p{
-    font-size: small;
-}
-#availability img{
-    width: 10%;
 
-}
-#rightSide{
-    display: grid;
-    grid-template-rows: 70% 20%;
-}
+/*About */
 
 #about{
-        display: grid;
-        grid-template-columns: 70% 20%;
+    display: flex;
+    justify-content: space-between;
+}
+#myinfo{
+    margin: 45px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#buttonsAbout{
+    display: flex;
+    gap: 5px;
+}
+.button{
+    font-size: x-small;
+    display: flex;
+    height: 30px;
+    padding: 0;
+    background: orangered;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px #d13b03;
+}
+.button:hover {
+    background: #d13b03;
+}
+.button:active {
+    background: #ae3201;
+}
+.buttonText,
+.buttonIcon {
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #000000;
+}
+.buttonText{
+    padding: 0 8px;
+    border-radius: 7px 0 0 7px;
+}
+.buttonIcon{
+    border-radius: 0 7px 7px 0;
+}
+.buttonIcon img{
+    max-height: 80%;
+    background: transparent;
+    width: 80%;
+    color: #fff;
+}
+.button2{
+    font-size: x-small;
+    display: flex;
+    height: 30px;
+    padding: 0;
+    background: #161616;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button2:hover {
+    background: #2c2c2c;
+}
+.button2:active {
+    background: #474646;
+}
+.buttonText2,
+.buttonIcon2 {
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #1B1B1B;
+}
+.buttonText2{
+    padding: 0 8px;
+    border-radius: 7px 0 0 7px;
+}
+.buttonIcon2{
+    border-radius: 0 7px 7px 0;
+}
+.buttonIcon2 img{
+    max-height: 80%;
+    background: transparent;
+    width: 80%;
+    color: #fff;
+}
+#myphoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 30%;
+}
+#availability{
+    font-size: x-small;
+    display: flex;
+    background-color: #161616;
+    padding: 2px 15px;
+    border-radius: 20px;
+    height: 20px;
+    width: 170px;
+}
+#availableText, #availableIcon{
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#availableText{
+    width: 80%;
+}
+#availableIcon{
+    width: 12%;
+}
+#myphotoImg img{
+    border-radius: 50%;
+    width: 70%;
+    border: 10px solid orangered;
 }

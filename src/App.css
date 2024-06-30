@@ -37,7 +37,7 @@ header button{
     font-weight: bolder;
 }
 header button:hover{
-    color: orangered;
+    color: #F35034;
 }
 
 /*Generic box*/
@@ -63,20 +63,20 @@ header button:hover{
 }
 #buttonsAbout{
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
-.button{
+.button {
     font-size: x-small;
     display: flex;
     height: 30px;
     padding: 0;
-    background: orangered;
-    border: none;
+    background: #E63E21;
+    border: 1px solid #000000;
     outline: none;
     border-radius: 7px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 0 5px #d13b03;
+    box-shadow: 0 0 20px -2px #d13b03;
 }
 .button:hover {
     background: #d13b03;
@@ -89,28 +89,28 @@ header button:hover{
     align-content: center;
     align-items: center;
     height: 100%;
-    border: 1px solid #000000;
 }
-.buttonText{
+.buttonText {
     padding: 0 8px;
-    border-radius: 7px 0 0 7px;
+    border-right: 1px solid #000; /* Añadir borde derecho */
 }
-.buttonIcon{
-    border-radius: 0 7px 7px 0;
+.buttonIcon {
+    border-left: 1px solid #000; /* Añadir borde izquierdo */
 }
-.buttonIcon img{
+.buttonIcon img {
     max-height: 80%;
     background: transparent;
     width: 80%;
     color: #fff;
 }
+
 .button2{
     font-size: x-small;
     display: flex;
     height: 30px;
     padding: 0;
     background: #161616;
-    border: none;
+    border: 1px solid #262626;
     outline: none;
     border-radius: 7px;
     overflow: hidden;
@@ -127,14 +127,13 @@ header button:hover{
     align-content: center;
     align-items: center;
     height: 100%;
-    border: 1px solid #1B1B1B;
 }
 .buttonText2{
     padding: 0 8px;
-    border-radius: 7px 0 0 7px;
+    border-right: 1px solid #262626; /* Añadir borde derecho */
 }
 .buttonIcon2{
-    border-radius: 0 7px 7px 0;
+    border-left: 1px solid #262626; /* Añadir borde izquierdo */
 }
 .buttonIcon2 img{
     max-height: 80%;
@@ -157,6 +156,7 @@ header button:hover{
     border-radius: 20px;
     height: 20px;
     width: 170px;
+    border: 1px solid #262626;
 }
 #availableText, #availableIcon{
     align-content: center;
@@ -172,5 +172,65 @@ header button:hover{
 #myphotoImg img{
     border-radius: 50%;
     width: 70%;
-    border: 10px solid orangered;
+    border: 10px solid #3F3E3E;
+}
+
+/*Main */
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+/*Experience */
+#experience{
+    grid-row: 1/5;
+    grid-column: 1/2;
+    /*margin: 10px 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#experience h2{
+    margin: 10px 20px;
+}
+#currentPosition h3{
+    color: #F35034;
+}
+.expElement{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+}
+.leftSideExpElement{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Abilities */
+#abilities{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+/*Project1 */
+#project1{
+    grid-row: 5/11;
+    grid-column: 1/2;
+}
+
+/*Project2 */
+#project2{
+    grid-row: 3/7;
+    grid-column: 2/3;
+}
+
+/*Project3*/
+#project3{
+    grid-row: 7/11;
+    grid-column: 2/3;
 }

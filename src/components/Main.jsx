@@ -7,12 +7,13 @@ export default function Main(){
     <>
       <main>
         <Experience/>
-        <section id="habilities">
+        <section id="abilities" className="box">
+          Abilities
           <Ability/>
         </section>
-        <section id="projects">
-          <Project/>
-        </section>
+        <Project id="project1"/>
+        <Project id="project2"/>
+        <Project id="project3"/>
       </main>
     </>
   );

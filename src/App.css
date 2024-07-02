@@ -20,7 +20,7 @@ p{
 #all{
     display: grid;
     grid-template-rows: 1fr 5fr 13fr 1fr;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 1000px;
     gap: 10px;
 }
@@ -28,15 +28,15 @@ p{
 /*Header */
 header{
     text-align: center;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    height: 100%;
 }
 
 header button{
     background-color: #1B1B1B;
     border-style: none;
-    min-height: 30px;
     font-weight: bolder;
 }
 header button:hover{
@@ -216,10 +216,10 @@ main{
 }
 /*Abilities */
 #abilities{
-    grid-row: 1/4;
+    grid-row: 1/6;
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
 .svgs{
@@ -227,29 +227,30 @@ main{
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
-    gap: 10px;
 }
 .svgs img{
     width: 15%;
 }
+.svgs img:hover{
+    background-color: red;
+}
 #abilities h3{
     margin: 10px 20px;
 }
+
 
 /*Project1 */
 #project1{
     grid-row: 5/11;
     grid-column: 1/2;
 }
-
-/*Project2 */
-#project2{
-    grid-row: 4/7;
+/*Project3*/
+#project3{
+    grid-row: 6/11;
     grid-column: 2/3;
 }
 
-/*Project3*/
-#project3{
-    grid-row: 7/11;
-    grid-column: 2/3;
+/*Footer */
+footer{
+
 }

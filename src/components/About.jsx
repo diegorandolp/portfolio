@@ -4,6 +4,7 @@ import copyIcon from '../assets/copy-outline.svg';
 import radioIcon from '../assets/radio-button-on.svg';
 
 export default function About(){
+
   return(
     <div id="about" className="box">
       <section id="myinfo">
@@ -12,11 +13,15 @@ export default function About(){
         <h1>I'm Diego Randolp</h1>
         <p>I code</p>
         <div id="buttonsAbout">
-          <button className="button">
+          <button className="button" onClick={() => {
+            window.open("https://www.linkedin.com/in/diegorandolp/", "_blank");
+          }}>
             <span className="buttonText">CONTACT ME</span>
             <span className="buttonIcon"><img src={addIcon} alt="addIcon"/></span>
           </button>
-          <button className="button2">
+          <button className="button2" onClick={() => {
+            navigator.clipboard.writeText("diegorandolp@gmail.com");
+          }}>
             <span className="buttonText2">COPY EMAIL</span>
             <span className="buttonIcon2"><img src={copyIcon} alt="copyIcon"/></span>
           </button>

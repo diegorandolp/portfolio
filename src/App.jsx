@@ -12,10 +12,11 @@ function App() {
 
   return (
     <div id="all">
-      <Header />
-      <About />
-      <Main />
-      <Footer />
+      <Header/>
+      <About/>
+      <Main/>
+      <Footer/>
+      <button className="button2">Product design</button>
     </div>
   );
 }
